@@ -89,7 +89,7 @@ impl Program {
 
         let request_sender = RequestSender::new();
         let mut connector = E621WebConnector::new(&request_sender);
-        connector.should_enter_safe_mode();
+        // connector.should_enter_safe_mode();
 
         // Parses tag file.
         trace!("Parsing tag file...");
